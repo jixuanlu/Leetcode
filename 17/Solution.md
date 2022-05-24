@@ -35,13 +35,13 @@ class Solution {
         return combinations;
     }
     
-    public void backtrack(List<String> combinations, HashMap<Character, String> phoneMap,  String digits, int index, StringBuffer combination) {
+    public void backtrack(List<String> combinations, HashMap<Character, String> phoneMap, String digits, int index, StringBuffer combination) {
         if(index == digits.length()) {
             combinations.add(combination.toString());
         }
         else {
             String letters = phoneMap.get(digits.charAt(index));
-            for(int i = 0 ; i < letters.length(); i++) {
+            for(int i = 0; i < letters.length(); i++) {
                 combination.append(letters.charAt(i));
                 backtrack(combinations, phoneMap, digits, index+1, combination);
                 combination.deleteCharAt(combination.length()-1);
