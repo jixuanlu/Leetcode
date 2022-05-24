@@ -13,3 +13,40 @@
   * After return from the recursive function, delete the current letter to get ready for the next loop.</br>
  
  By doing this, we can loop through all the letters for the current dight, and for each letters recursively loop all the letters for the next digit, until the last one, and add each combination to the combinations list.
+## Code
+```
+class Solution {
+    public List<String> letterCombinations(String digits) {
+        List<String> combinations = new ArrayList();
+        if(digits.length() == 0) {
+            return combinations;
+        }
+        HashMap<Character, String> phoneMap = new HashMap<Character, String>(){{
+            put('2', "abc");
+            put('3', "def");
+            put('4', "ghi");
+            put('5', "jkl");
+            put('6', "mno");
+            put('7', "pqrs");
+            put('8', "tuv");
+            put('9', "wxyz");
+        }};
+        backtrack(combinations, phoneMap, digits, 0, new StringBuffer());
+        return combinations;
+    }
+    
+    public void backtrack(List<String> combinations, HashMap<Character, String> phoneMap,  String digits, int index, StringBuffer combination) {
+        if(index == digits.length()) {
+            combinations.add(combination.toString());
+        }
+        else {
+            String letters = phoneMap.get(digits.charAt(index));
+            for(int i = 0 ; i < letters.length(); i++) {
+                combination.append(letters.charAt(i));
+                backtrack(combinations, phoneMap, digits, index+1, combination);
+                combination.deleteCharAt(combination.length()-1);
+            }
+        }
+    }
+}
+```
