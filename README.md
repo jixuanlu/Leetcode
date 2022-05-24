@@ -1,3 +1,3 @@
 # Leetcode
-## Java Standared Class Table of Content
+## Java Standared Class Table of Contents
 * StringBuffer & StringBuilder -------------------------------------------------------------------------------------- 7
