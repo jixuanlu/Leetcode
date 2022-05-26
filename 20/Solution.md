@@ -28,3 +28,17 @@ class Solution {
     }
 }
 ```
+
+# Method 2 Eliminate Pairs
+Replace all the pairs "()", "[]", "{}" to empty string "". If the last string is empty return ture else return false.
+## Code
+```
+# Python
+class Solution(object):
+    def isValid(self, s):
+        while "()" in s or "[]" in s or "{}" in s:
+            s = s.replace("()", "")
+            s = s.replace("[]", "")
+            s = s.replace("{}", "")
+        return s == ""
+```
