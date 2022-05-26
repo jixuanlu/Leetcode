@@ -27,7 +27,7 @@ class Solution {
 ```
 
 # Method 2 Stack
-create a dummy node as the previous node of the head. Loop through all the node and put each node into a stack. The nth node in the stack is the node we need to remove. After pop n nodes from the stack we are at the previous node of the target ListNode, and then we can just remove the next node of it. Finally return the next node of dummy.
+Create a dummy node as the previous node of the head. Loop through all the node and put each node into a stack. The nth node in the stack is the node we need to remove. After pop n nodes from the stack we are at the previous node of the target ListNode, and then we can just remove the next node of it. Finally return the next node of dummy.
 ## Code
 ```
 class Solution {
