@@ -18,3 +18,41 @@ class Solution {
     }
 }
 ```
+</br>
+
+# Method 2 Iteration
+
+## Code 
+```
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode one = dummy;
+        ListNode two = one.next;
+        ListNode three = new ListNode();
+        if(two != null) 
+            three = two.next;
+        else 
+            three = null;
+        
+        while(three != null) {
+            two.next = three.next;
+            three.next = two;
+            one.next = three;
+            one = two;
+            if(one != null) {
+                two = one.next;
+                if(two != null) 
+                    three = two.next;
+                else
+                    three = null;
+            }
+            else {
+                two = null;
+                three = null;
+            }
+        }
+        return dummy.next ;
+    }
+}
+```
