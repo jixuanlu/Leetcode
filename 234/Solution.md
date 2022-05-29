@@ -1,4 +1,4 @@
-# Method 1 List
+# Method 1 List (Easy)
 * Put the LinkedList into an arrayList then use double pointer.
 ## Code
 ```
