@@ -2,6 +2,7 @@
 ```
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
+        // Make nums1 be the smaller array
         if (nums1.length > nums2.length) {
             return intersect(nums2, nums1);
         }
@@ -26,10 +27,14 @@ class Solution {
                 if(set1.get(i) > 0) {
                     int value = set1.get(i);
                     value --;
-                    set1.replace(i, value);
-                    intersection[index++] = i;
+                    
+                    // Once a value become 0 remove directly
                     if(value == 0)
                         set1.remove(i);
+                    else
+                        set1.replace(i, value);
+
+                    intersection[index++] = i;  
                 }
             }
         }
