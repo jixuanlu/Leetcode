@@ -1,6 +1,24 @@
 # HashSet
 HashSet is used to store objects, it don't allow duplicate elements, by using "public boolean add(Object obj)" to add elements to the set, if success return true else return false
 
+```
+HashSet<> set = new HashSet<>();
+
+set.add(E e);
+
+set.contains(Object o);
+
+set.clear();
+
+set.isEmpty();
+
+set.remove(Object o);
+
+set.size();
+
+```
+
+
 # HashMap
 HashMap is used to store key-value pairs, it don't allow duplicate keys, bu using "public Object put(Object Key, Object value)" to add elements to the map.
 
