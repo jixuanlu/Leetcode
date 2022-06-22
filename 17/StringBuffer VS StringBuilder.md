@@ -44,6 +44,7 @@
 ## Method
 * | return value | signature |
   |--------------|-----------|
+  | char | charAt(int index) |
   | int | length() |
   | int | capacity() |
   | StringBuilder | append(String str) |
