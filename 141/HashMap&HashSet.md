@@ -25,4 +25,7 @@ map.isEmpty();
 
 map.size();
 
+map.remove(Object key);
+
+map.replace(K key, V newValue);
 ~~~
