@@ -1,6 +1,6 @@
 # KMP
 This question use the property of the next array in KMP algorithm, we calculate the next array for this String and use an if statement 
-to justify whether this String is repeate by a sub String  
+to justify whether this String is repeated by a sub String. 
 ## Code
 ~~~
 class Solution {
