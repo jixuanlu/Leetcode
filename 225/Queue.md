@@ -1,5 +1,7 @@
 # Queue
+~~~
 Queue<Integer> queue = new LinkedList<>();
+~~~
 | Return value | method | description |
 | ------------ | ------ | ----------- |
 | boolean | offer(E e) | Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions. |
