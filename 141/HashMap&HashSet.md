@@ -16,6 +16,7 @@ set.remove(Object o);
 
 set.size();
 
+By doing set.iterator().next(); we can get the first element inside the set.
 ```
 
 
