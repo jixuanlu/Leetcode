@@ -1,5 +1,7 @@
 # Binary Tree Inorder Traversal (中序遍历)
-左节点  根节点  右节点
+根节点  左节点  右节点 (前序)
+左节点  根节点  右节点 (中序)
+左节点  右节点  根节点 (后序)
 # Method 1 Recursion
 
 ## Code
