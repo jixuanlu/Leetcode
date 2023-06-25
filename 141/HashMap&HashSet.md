@@ -47,4 +47,7 @@ map.size();
 map.remove(Object key);
 
 map.replace(K key, V newValue);
+
+map.getOrDefault(key, defaultValue);
+// return the value if exist, otherwise return the default value.
 ~~~
