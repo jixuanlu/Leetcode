@@ -48,4 +48,5 @@ List<Value> list = new ArrayList<Value>(map.values());
 
 // Here the return type of map.values() is a Collection, and it can pass to List.
 // The list will be a list that contains each value that map.values() contains.
+// Collection 类的返回值可以作为其所有子类的输入, 例如 List, Queue, Deque, Map, Set.
 ~~~
