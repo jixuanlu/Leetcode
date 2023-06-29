@@ -1,4 +1,8 @@
 # String 
+```
+String key = new String(array);    // String can be constructed by a char array
+```
+
 
 | return value | method | description |
 | ------------ | ------ | ----------- |
