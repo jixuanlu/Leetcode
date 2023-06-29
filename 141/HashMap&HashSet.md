@@ -49,4 +49,9 @@ List<Value> list = new ArrayList<Value>(map.values());
 // Here the return type of map.values() is a Collection, and it can pass to List.
 // The list will be a list that contains each value that map.values() contains.
 // Collection 类的返回值可以作为其所有子类的输入, 例如 List, Queue, Deque, Map, Set.
+
+HashSet<List<String>> set = new HashSet<>(map.values());
+Deque<List<String>> deque = new LinkedList<>(map.values());
+// This also works, but we have to make sure the datatype of the element in map.values() same with HashSet or Deque.
+// In this case, would be List<String>
 ~~~
