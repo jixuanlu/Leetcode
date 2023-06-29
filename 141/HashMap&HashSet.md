@@ -27,27 +27,16 @@ HashMap will be faster than HashSet. Since it use the unique key to get value.
 
 ~~~
 HashMap<> map = new HashMap<>();
-
-map.clear()
-
-map.put(key, value);
-//For put(), if we put an element that have the same key with the element that the map already exist, 
-// it will match the value, if same don't change if different, overwrite the original value with the new value.
-
-map.containsKey(Object key);
-
-map.containsValue(Object value);
-
-map.get(Object key); // return value;
-
-map.isEmpty();
-
-map.size();
-
-map.remove(Object key);
-
-map.replace(K key, V newValue);
-
-map.getOrDefault(key, defaultValue);
-// return the value if exist, otherwise return the default value.
 ~~~
+| Return value | method | description |
+|--------------|--------|-------------|
+| void | map.clear() | Removes all of the mappings from this map. |
+| V value | map.put(K key, V value) | For put(), if we put an element that has the same key as the element that the map already exists, it will match the value, if same doesn't change if different, overwrite the original value with the new value. |
+| boolean | map.containsKey(Object key) |  |
+| boolean | map.containsValue(Object value) |  |
+| V | map.get(Object key) | return value |
+| boolean | map.isEmpty() |  |
+| int | map.size() |  |
+| boolean | map.remove(Object key) |  |
+| boolean | map.replace(K key, V newValue) |  |
+| V | map.getOrDefault(key, defaultValue) | return the value if exist, otherwise return the default value. |
