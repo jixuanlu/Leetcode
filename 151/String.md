@@ -9,3 +9,4 @@
 | String[] | 	split(String regex) | Splits this string around matches of the given regular expression. |
 | String | trim() | Returns a copy of the string, with leading and trailing whitespace omitted. |
 | String | toUpperCase() | Converts all of the characters in this String to upper case using the rules of the default locale. |
+| char[] | toCharArray() | Convert the string to a char array. |
