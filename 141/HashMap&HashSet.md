@@ -40,3 +40,4 @@ HashMap<> map = new HashMap<>();
 | boolean | map.remove(Object key) |  |
 | boolean | map.replace(K key, V newValue) |  |
 | V | map.getOrDefault(key, defaultValue) | return the value if exist, otherwise return the default value. |
+| Collection<V> | map.values() | Returns a Collection view of the values contained in this map. |
