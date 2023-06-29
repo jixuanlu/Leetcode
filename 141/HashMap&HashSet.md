@@ -52,6 +52,7 @@ List<Value> list = new ArrayList<Value>(map.values());
 
 HashSet<List<String>> set = new HashSet<>(map.values());
 Deque<List<String>> deque = new LinkedList<>(map.values());
+
 // This also works, but we have to make sure the datatype of the element in map.values() same with HashSet or Deque.
 // In this case, would be List<String>
 ~~~
