@@ -42,3 +42,10 @@ HashMap<> map = new HashMap<>();
 | V | map.getOrDefault(key, defaultValue) | return the value if exist, otherwise return the default value. |
 | Set<K> | map.keySet() | Returns a Set view of the keys contained in this map. |
 | Collection<V> | map.values() | Returns a Collection view of the values contained in this map. |
+
+~~~
+List<Value> list = new ArrayList<Value>(map.values());
+
+// Here the return type of map.values() is a Collection, and it can pass to List.
+// The list will be a list that contains each value that map.values() contains.
+~~~
