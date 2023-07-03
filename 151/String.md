@@ -14,3 +14,4 @@ String key = new String(array);    // String can be constructed by a char array
 | String | trim() | Returns a copy of the string, with leading and trailing whitespace omitted. |
 | String | toUpperCase() | Converts all of the characters in this String to upper case using the rules of the default locale. |
 | char[] | toCharArray() | Convert the string to a char array. |
+| int | indexOf(String str) | Find the start index of the substring |  
