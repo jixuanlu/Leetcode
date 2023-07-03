@@ -11,3 +11,4 @@ Queue<Integer> queue = new LinkedList<>();
 | E | poll() | Retrieves and removes the head of this queue, or returns null if this queue is empty. |
 | E | remove() | Retrieves and removes the head of this queue. |
 | int | size() | Return the size of the queue |
+| boolean | isEmpty() | check if the queue is empty |
