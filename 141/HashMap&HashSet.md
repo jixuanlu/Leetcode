@@ -63,5 +63,6 @@ Deque<List<String>> deque = new LinkedList<>(map.values());
 for (Map.Entry<Integer,Integer> entry : map.entrySet()) {
     System.out.println("Key = " + entry.getKey() + " Value = " + entry.getValue());
 }
+
 // We can use this way to loop through the map.
 ~~~
