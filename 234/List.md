@@ -11,6 +11,7 @@ List<Integer> list = new ArrayList<>();
 | Object[] | toArray() | Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
 | boolean |	contains(Object o) | Returns true if this list contains the specified element. |
 | E | set(int index, E element) | Replaces the element at the specified position in this list with the specified element. |
+| E |	remove(int index) |
 ~~~
 int[] array = list.stream().mapToInt(Integer::intValue).toArray();
 
