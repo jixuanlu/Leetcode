@@ -5,8 +5,11 @@ Arrays.copyOfRange(array, startIndex, endIndex)  // 区间是[startIndex, endInd
 Arrays.fill(array, object);  //将 Array 填满某个元素
 
 nums = IntStream.of(nums)
-		     .boxed()
-		     .sorted((o1, o2) -> Math.abs(o2) - Math.abs(o1))
-		     .mapToInt(Integer::intValue).toArray();
+	.boxed()
+	.sorted((o1, o2) -> Math.abs(o2) - Math.abs(o1))
+	.mapToInt(Integer::intValue).toArray();
 // 将数组按照绝对值从大到小进行排序
+
+int sum = Arrays.stream(nums).sum();
+// 对数组进行求和
 ~~~
