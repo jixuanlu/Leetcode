@@ -12,4 +12,8 @@ nums = IntStream.of(nums)
 
 int sum = Arrays.stream(nums).sum();
 // 对数组进行求和
+
+Arrays.sort(points, (a, b) -> Integer.compare(a[0], b[0]));
+Arrays.sort(points, (a, b) -> a[0] - b[0]);
+// 这两种解法效果相同但是第一种可以避免当两者差值过大产生溢出.
 ~~~
