@@ -16,4 +16,5 @@ String key = new String(array);    // String can be constructed by a char array
 | char[] | toCharArray() | Convert the string to a char array. |
 | int | indexOf(String str) | Find the start index of the substring |  
 | String | substring(int startIndex, int endIndex) | starting index is inclusive, ending index is exclusive | 
-| String  | valueOf(Object o) | converts different types of values into a string, the input argument includes: boolean, char, char[], int, long, float, double, object. 用法: String.valueOf(), 特定字符串不能使用此方法 |
+| String | valueOf(Object o) | converts different types of values into a string, the input argument includes: boolean, char, char[], int, long, float, double, object. 用法: String.valueOf(), 特定字符串不能使用此方法 |
+| String | join(CharSequence delimiter, CharSequence... elements) | String.join(" < ", "Four", "Five", "Six", "Seven") Output: "Four < Five < Six < Seven"; This can also use String[] as input argument String.join("", strings) |
