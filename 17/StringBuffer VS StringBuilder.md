@@ -53,7 +53,9 @@
   | StringBuilder | deleteCharAt(int index) |
   | StringBuilder | insert(int offset, String str) |
   | StringBuilder | replace(int startIndex, int endIndex, String str) |
-  | StringBuilder | reverse() |  
+  | StringBuilder | reverse() |
+  | String | 	substring(int start) |
+  | String | 	substring(int start, int end) |
   | String | toString() |
 </br>
 
