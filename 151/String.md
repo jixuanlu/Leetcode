@@ -1,7 +1,14 @@
 # String 
 ```
 String key = new String(array);    // String can be constructed by a char array
+String(byte[] bytes);    // 通过byte数组构造字符串对象
+String(byte[] bytes, int offset, int count);    // 通过byte数组，从offset开始，总共count长的字节构造字符串对象
+String(char[] value);    // 通过char数组构造字符串对象
+String(char[] char, int offset, int count);    // 通过char数组，从offset开始，总共count长的字节构造字符串对象
+String(String original);    // 构造一个original的副本，拷贝一个original
+String(StringBuffer buffer);    // 通过StringBuffer数组构造字符串对象
 ```
+https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
 
 
 | return value | method | description |
